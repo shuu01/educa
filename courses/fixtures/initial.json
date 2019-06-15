@@ -1,0 +1,195 @@
+[
+{
+  "model": "courses.subject",
+  "pk": 5,
+  "fields": {
+    "title": "Programming",
+    "slug": "programming"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 6,
+  "fields": {
+    "title": "Administration",
+    "slug": "administration"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 1,
+  "fields": {
+    "owner": 1,
+    "subject": 5,
+    "title": "Web-python",
+    "slug": "web-python",
+    "overview": "django, flask, js, bootstrap",
+    "created": "2019-06-09T18:36:47.556Z",
+    "students": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 2,
+  "fields": {
+    "owner": 1,
+    "subject": 5,
+    "title": "Python",
+    "slug": "python",
+    "overview": "Python",
+    "created": "2019-06-09T18:45:31.089Z",
+    "students": [
+      2
+    ]
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 3,
+  "fields": {
+    "owner": 1,
+    "subject": 6,
+    "title": "DevOps",
+    "slug": "devops",
+    "overview": "DevOps",
+    "created": "2019-06-09T18:48:06.521Z",
+    "students": []
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 4,
+  "fields": {
+    "owner": 1,
+    "subject": 6,
+    "title": "Linux",
+    "slug": "linux",
+    "overview": "Linux",
+    "created": "2019-06-09T19:07:52.804Z",
+    "students": [
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 1,
+  "fields": {
+    "course": 1,
+    "title": "Module 1",
+    "description": "Backend"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 2,
+  "fields": {
+    "course": 1,
+    "title": "Module 2",
+    "description": "Frontend"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 3,
+  "fields": {
+    "course": 1,
+    "title": "Module 3",
+    "description": "CI/CD"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 4,
+  "fields": {
+    "course": 2,
+    "title": "Basics",
+    "description": "OOP\r\nTesting"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 5,
+  "fields": {
+    "course": 2,
+    "title": "Web",
+    "description": "Django\r\nREST"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 6,
+  "fields": {
+    "course": 2,
+    "title": "Data Engineering",
+    "description": "NumPy\r\nPandas"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 7,
+  "fields": {
+    "course": 3,
+    "title": "Module 1",
+    "description": "GCP\r\nGit"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 8,
+  "fields": {
+    "course": 3,
+    "title": "Module 2",
+    "description": "Ansible"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 9,
+  "fields": {
+    "course": 3,
+    "title": "Module 3",
+    "description": "Docker"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 10,
+  "fields": {
+    "course": 3,
+    "title": "Module 4",
+    "description": "Prometheus"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 11,
+  "fields": {
+    "course": 4,
+    "title": "Architecture",
+    "description": "stuff"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 12,
+  "fields": {
+    "course": 4,
+    "title": "Security",
+    "description": "Security and monitoring"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 13,
+  "fields": {
+    "course": 4,
+    "title": "Networking",
+    "description": "dns, dhcp, vlan, lacp, vrrp, iptables"
+  }
+}
+]

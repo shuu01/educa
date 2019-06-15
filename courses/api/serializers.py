@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from ..models import Subject, Course, Module
+from ..models import Subject, Course, Module, User
 
 
 class SubjectSerializer(serializers.ModelSerializer):
@@ -17,3 +17,22 @@ class CourseSerializer(serializers.ModelSerializer):
     class Meta:
         model = Course
         fields = ('id', 'subject', 'title', 'slug', 'overview', 'created', 'owner', 'modules')
+
+class UserSerializer(serializers.ModelSerializer):
+
+    password = serializers.CharField(write_only=True)
+
+    def create(self, validated_data):
+
+        user = User.objects.create(
+            username=validated_data['username']
+        )
+        user.set_password(validated_data['password'])
+        user.save()
+
+        return user
+
+    class Meta:
+        model = User
+        # Tuple of serialized model fields
+        fields = ("id", "username", "password",)
