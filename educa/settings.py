@@ -25,7 +25,7 @@ SECRET_KEY = 'j#@eciuvuf%ij7q)#@1yt8&h1_!oc8o&i)v65*9e6_z$p#sm(h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['debian', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['ubuntu', 'localhost', '127.0.0.1']
 
 
 # Application definition
